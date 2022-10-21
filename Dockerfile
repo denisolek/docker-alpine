@@ -26,8 +26,8 @@ ENV FLUENTBIT_VERSION=${FLUENTBIT_VERSION:-"1.9.9"} \
     S6_GLOBAL_PATH=/command:/usr/bin:/bin:/usr/sbin:sbin:/usr/local/bin:/usr/local/sbin \
     S6_KEEP_ENV=1 \
     S6_CMD_WAIT_FOR_SERVICES_MAXTIME=0 \
-    IMAGE_NAME="tiredofit/alpine" \
-    IMAGE_REPO_URL="https://github.com/tiredofit/docker-alpine/"
+    IMAGE_NAME="denisolek/alpine" \
+    IMAGE_REPO_URL="https://github.com/denisolek/docker-alpine/"
 
 ## Mono Repo workarounds
 RUN case "$(cat /etc/os-release | grep VERSION_ID | cut -d = -f 2 | cut -d . -f 1,2)" in \
